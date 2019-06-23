@@ -12,16 +12,16 @@ if (result > 0) {
 var result = prompt('input', 0);
 switch (result) {
     case '1':
-        console.log('a')
+        console.log('a');
         break;
     case '2':
-        console.log('b')
+        console.log('b');
         break;
     case '3':
-        console.log('c')
+        console.log('c');
         break;
     default:
-        console.log('z')
+        console.log('z');
 }
 
 
