@@ -1,59 +1,36 @@
  // task 1
-var min = 10,
-    max = 20;
-var r = Math.floor(Math.random() * (max - min + 1)) + min;
+ var min = 10,
+     max = 20;
+ var r = Math.floor(Math.random() * (max - min + 1)) + min;
 
-function getNumber(min, max) {
-    if (r % 2 == 0) {
-        return ('pair number');
-    } else {
-        return ('not a pair number');
-    }
-}
-console.log(getNumber());
-
-
-
-//  task 2
-
-var arr = ['lorem', 'ipsum', 'is', 'simply', 'dummy'];
-var arr1 = arr.join(' ');
-
-function titleCase(str) {
-    var splitStr = str.toLowerCase().split(' ');
-    for (var i = 0; i < splitStr.length; i++) {
-        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-    }
-    return splitStr.join(' ');
-}
-console.log(titleCase(arr1));  //each word with a capital letter
+ function getNumber(min, max) {
+     if (r % 2 == 0) {
+         return ('pair number');
+     } else {
+         return ('not a pair number');
+     }
+ }
+ console.log(getNumber());
 
 
 
+ //  task 2
 
-var arr1 = ['Lorem', 'ipsum', 'is', 'simply', 'dummy'];
-for (var arr of arr1) {
-    // console.log(arr);
-}
-
-var tmp = '';
-for (var arr of arr1) {
-    if (arr[0] == arr[0].toUpperCase()) {
-        tmp += arr;
-    }
-}
-console.log(tmp);
+ var str = ['lorem', 'ipsum', 'is', 'simply', 'dummy'];
+ var arr1 = [];
+ str.forEach(function (item) {
+     arr1.push(item[0].toUpperCase() + item.slice(1));
+ });
+ console.log(arr1.join(' '));
 
 
 
+ //  task 3
+ var result = String('first string', 'Second one');
 
+ function String(str1, str2) {
 
+     return (str1.length > str2.length) ? str1 : str2;
+ }
 
- // task 3
-var result = String('first string', 'Second one');
-function String(str1, str2) {
-
-    return (str1.length > str2.length) ? str1 : str2;
-}
-
-console.log(result);
+ console.log(result);
