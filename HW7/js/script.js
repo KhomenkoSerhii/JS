@@ -10,7 +10,7 @@ var btn_calc = document.querySelector('.btn-calc');
 var totalValue = document.querySelector('.total');
 
 btn_calc.addEventListener('click', function () {
-    var tr = document.querySelectorAll('.table tbody tr')
+    var tr = document.querySelectorAll('.table tbody tr');
     var total = 0;
     tr.forEach(function (row) {
         total += row.querySelector('[name="price"]').value *
